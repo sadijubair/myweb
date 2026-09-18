@@ -1,0 +1,19 @@
+{
+  "name": "sadi-webfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio template for Sadi Jubair",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./output.css --minify"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwind",
+    "glassmorphism"
+  ],
+  "author": "Sadi Jubair",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

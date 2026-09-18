@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent;
+  }
+  .glass-card {
+    @apply bg-gray-900/50 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  .glass-card-hover {
+    @apply transition-all duration-300 hover:border-cyan-500/40 hover:bg-gray-900/70 hover:shadow-cyan-500/10;
+  }
+  .glass-nav {
+    @apply bg-gray-950/80 backdrop-blur-xl border-b border-white/10;
+  }
+}
+
+/* Custom Scrollbar */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cyan-500/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyan-500/60;
+  }
+}
